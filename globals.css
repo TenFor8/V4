@@ -1,0 +1,187 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #f8fafc;
+  color: #0f172a;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* ========================================================
+   SOPHISTICATED DARK MODE THEME SYSTEM
+   ======================================================== */
+.dark {
+  color-scheme: dark;
+}
+
+.dark body {
+  background-color: #090d16 !important;
+  color: #f1f5f9 !important;
+}
+
+/* Backgrounds */
+.dark .bg-white {
+  background-color: #0f172a !important;
+}
+
+.dark .bg-slate-50 {
+  background-color: #090d16 !important;
+}
+
+.dark .bg-slate-100 {
+  background-color: #1e293b !important;
+}
+
+.dark .bg-slate-200 {
+  background-color: #334155 !important;
+}
+
+/* Borders */
+.dark .border-slate-100,
+.dark .border-slate-200,
+.dark .border-slate-200\/80 {
+  border-color: #1e293b !important;
+}
+
+.dark .divide-slate-100 > * + *,
+.dark .divide-slate-200 > * + * {
+  border-color: #1e293b !important;
+}
+
+/* Text Hierarchy */
+.dark .text-slate-900 {
+  color: #f8fafc !important;
+}
+
+.dark .text-slate-800 {
+  color: #f1f5f9 !important;
+}
+
+.dark .text-slate-700 {
+  color: #cbd5e1 !important;
+}
+
+.dark .text-slate-600 {
+  color: #94a3b8 !important;
+}
+
+.dark .text-slate-500 {
+  color: #64748b !important;
+}
+
+.dark .text-slate-400 {
+  color: #94a3b8 !important;
+}
+
+.dark .text-slate-300 {
+  color: #475569 !important;
+}
+
+/* Form Controls (Inputs, Selects, Textareas) */
+.dark input,
+.dark select,
+.dark textarea {
+  background-color: #1e293b !important;
+  color: #f8fafc !important;
+  border-color: #334155 !important;
+}
+
+.dark input::placeholder,
+.dark textarea::placeholder {
+  color: #64748b !important;
+}
+
+.dark input:focus,
+.dark select:focus,
+.dark textarea:focus {
+  border-color: #64748b !important;
+  background-color: #0f172a !important;
+}
+
+/* Primary Action Buttons (bg-slate-900 in light mode) */
+.dark button.bg-slate-900:not(.dark-mode-skip),
+.dark .bg-slate-900:not(.dark-mode-skip) {
+  background-color: #f8fafc !important;
+  color: #0f172a !important;
+}
+
+.dark button.bg-slate-900:not(.dark-mode-skip):hover,
+.dark .bg-slate-900:not(.dark-mode-skip):hover {
+  background-color: #e2e8f0 !important;
+}
+
+.dark button.bg-slate-900:not(.dark-mode-skip) svg,
+.dark .bg-slate-900:not(.dark-mode-skip) svg {
+  color: #0f172a !important;
+}
+
+.dark button.bg-slate-900:not(.dark-mode-skip) .text-amber-400,
+.dark .bg-slate-900:not(.dark-mode-skip) .text-amber-400 {
+  color: #d97706 !important;
+}
+
+/* Preserve Brand CG Logo */
+.dark .brand-logo-badge {
+  background-color: #020617 !important;
+  color: #fbbf24 !important;
+  border: 1px solid #334155 !important;
+}
+
+/* Navigation Segmented Bar */
+.dark nav.bg-slate-100 {
+  background-color: #1e293b !important;
+}
+
+.dark nav button.bg-white {
+  background-color: #0f172a !important;
+  color: #f8fafc !important;
+}
+
+/* Tinted Accent Cards */
+.dark .bg-amber-50,
+.dark .bg-amber-50\/50,
+.dark .bg-amber-50\/40 {
+  background-color: rgba(120, 53, 15, 0.2) !important;
+  border-color: rgba(245, 158, 11, 0.25) !important;
+}
+.dark .text-amber-900,
+.dark .text-amber-950 {
+  color: #fde68a !important;
+}
+
+.dark .bg-emerald-50,
+.dark .bg-emerald-50\/50,
+.dark .bg-emerald-50\/70 {
+  background-color: rgba(6, 78, 59, 0.2) !important;
+  border-color: rgba(16, 185, 129, 0.25) !important;
+}
+.dark .text-emerald-900,
+.dark .text-emerald-800 {
+  color: #a7f3d0 !important;
+}
+
+.dark .bg-indigo-50,
+.dark .bg-indigo-50\/40 {
+  background-color: rgba(49, 46, 129, 0.2) !important;
+  border-color: rgba(99, 102, 241, 0.25) !important;
+}
+.dark .text-indigo-900,
+.dark .text-indigo-950 {
+  color: #c7d2fe !important;
+}
+
+.dark .bg-rose-50,
+.dark .bg-rose-50\/50 {
+  background-color: rgba(136, 19, 55, 0.2) !important;
+  border-color: rgba(244, 63, 94, 0.25) !important;
+}
+.dark .text-rose-900,
+.dark .text-rose-800 {
+  color: #fecdd3 !important;
+}
+
+/* Modal Overlay */
+.dark .bg-slate-950\/40 {
+  background-color: rgba(0, 0, 0, 0.75) !important;
+}
